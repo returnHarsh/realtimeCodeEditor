@@ -43,7 +43,6 @@ const getAllConnectedClients= (roomId)=>{
 
 io.on("connection" , (socket)=>{
 
-    console.log(userSocketMap);
 
 
     socket.on(ACTIONS.JOIN , ( {roomId , username} )=>{
